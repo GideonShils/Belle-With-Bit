@@ -27,15 +27,6 @@ import CardStyle from 'bit/style/card-style';
 // Names for combo box
 const babyNames = ['Palma', 'Paloma', 'Pamella', 'Paris', 'Patti', 'Paulina', 'Pearl', 'Pearlie'];
 
-// Fruits for selection
-var fruits = [
-  { value: "pineapple", content: (<span>🍍 Pineapple</span>) },
-  { value: "banana", content: (<span>🍌 Banana</span>) },
-  { value: "peach", content: (<span>🍑 Peach</span>) },
-  { value: "pear", content: (<span>🍐 Pear</span>) },
-  { value: "cherries", content: (<span>🍒 Cherries</span>) }
-];
-
 /* Main App */
 class App extends React.Component {
   render() {
@@ -43,7 +34,7 @@ class App extends React.Component {
       <div className="container">
         {/* Header */}
         <div className="header">
-          <img src={logo}/>
+          <a href="http://nikgraf.github.io/belle"><img src={logo}/></a>
           <h1>Belle React Components</h1>
           <h2>Built With Bit</h2>
         </div>
@@ -51,19 +42,21 @@ class App extends React.Component {
          {/* Main section */}
         <div className="main">
           <div className="info">
-            <p>To see how any of these components are used and configured using Bit, check out the code on <a href="https://github.com/GideonShils/Belle-With-Bit/">GitHub</a>.</p>
-            <p>Import the components from <a href="https://bitsrc.io/belle/react-components#components">Bit</a> or view the original <a href="http://nikgraf.github.io/belle/">Belle project</a></p>
+            <p>Easily import individual Belle components to your React project using Bit.</p>
+            <p>View the <a href="https://bitsrc.io/belle/react-components#components">Bit scope</a> | View the original <a href="http://nikgraf.github.io/belle/">Belle project</a></p>
             <div className="line"></div>
             <div className="usage">
-              <h2>Component usage</h2>
-              <p>1. Import the component you want to use</p>
+              <h2>Usage</h2>
+              <p>1. Import the component you want to use:</p>
               <pre><code className="bash">bit import belle.react-components/components/button</code></pre>
-              <p>2. Use the component</p>
-              <pre><code className="html">{"<Button primary>Submit</Button>"}</code></pre>
+              <p>2. Use the component:</p>
+              <pre><code className="html">{"import Button from 'bit/components/button';"}<br /><br />{"<Button primary>Submit</Button>"}</code></pre>
+              <p>3. That's it!</p>
             </div>
           </div>
 
           <h2>Examples</h2>
+          <p>To see how any of these examples were created, check out the code on <a href="https://github.com/GideonShils/Belle-With-Bit/blob/master/src/index.js">GitHub</a>.</p>
 
           {/* Button components */}
           <div className="section">
@@ -91,19 +84,26 @@ class App extends React.Component {
                       marginRight: 0,
                       color: '#fff',
                       borderRadius: 100,
-                      background: '#9481F6',
-                      borderTop: '1px solid #9481F6',
-                      borderBottom: '1px solid #9481F6',
+                      background: '#9F96F8',
+                      borderTop: '1px solid #9F96F8',
+                      borderBottom: '1px solid #9F96F8',
                       textSize: 0.8,
-                      border: '1px solid #9481F6',
+                      border: '1px solid #9F96F8',
                       paddingLeft: 25,
                       paddingRight: 25,
                     }}
                     hoverStyle={{
-                      border: '1px solid #9481F6',
-                      borderBottom: '1px solid #9481F6',
-                      borderTop: '1px solid #9481F6',
-                      color: '#9481F6',
+                      border: '1px solid #9F96F8',
+                      borderBottom: '1px solid #9F96F8',
+                      borderTop: '1px solid #9F96F8',
+                      color: '#9F96F8',
+                      background: '#fff',
+                    }}
+                    activeStyle={{
+                      border: '1px solid #9F96F8',
+                      borderBottom: '1px solid #9F96F8',
+                      borderTop: '1px solid #9F96F8',
+                      color: '#9F96F8',
                       background: '#fff',
                     }}>
               Submit
@@ -130,9 +130,10 @@ class App extends React.Component {
                   padding: 20,
                   borderRadius: 6,
                   color: '#FFF',
-                  background: '#9481F6',
+                  background: '#9798E2',
                   boxShadow: '0px 0px 53px -11px rgba(0,0,0,0.4)',
-                  boxSizing: 'border-box'
+                  boxSizing: 'border-box',
+                  opacity: 0.8,
                 }}>
                 Add any content here like paragraphs, images or other components …
               </Card>
@@ -162,6 +163,12 @@ class App extends React.Component {
                           padding: 10,
                           borderRadius: 6,
                           color: '#9481F6',
+                        }}
+                        hoverStyle={{
+                          borderBottom: '1px solid #9481F6',
+                        }}
+                        focusStyle={{
+                          borderBottom: '1px solid #9481F6',
                         }}
                         hintStyle={{
                           top: 4,
@@ -236,11 +243,15 @@ class App extends React.Component {
               <Rating defaultValue={4} 
                       character={'✯'}
                       characterStyle={{
-                        color: '#9481F6',
+                        color: '#ABC5F4',
                         textShadow: '0px 0px 0px',
                       }}
                       hoverCharacterStyle={{
-                        color: '#9481F6',
+                        color: '#ABC5F4',
+                      }}
+                      activeCharacterStyle={{
+                        color: '#ABC5F4',
+                        textShadow: '0px 0px 0px',
                       }}
               />
             </div>
@@ -271,7 +282,7 @@ class App extends React.Component {
                   fontSize: 45,
                 }}
                 characterStyle={{
-                  color: '#9481F6',
+                  color: '#ABC5F4',
                 }}
               />
             </div>
@@ -312,8 +323,8 @@ class App extends React.Component {
               <h4>Custom styles</h4>
               {/* A toggle with custom styles */}
               <Toggle defaultValue
-                      firstChoiceStyle={{ backgroundColor: 'rgba(148, 129, 246, 0.8)' }}
-                      secondChoiceStyle={{ backgroundColor: 'rgba(188, 81, 99, 0.8)' }} 
+                      firstChoiceStyle={{ backgroundColor: 'rgba(163, 196, 241, 0.8)' }}
+                      secondChoiceStyle={{ backgroundColor: 'rgba(158, 218, 219, 0.8)' }} 
               />
             </div>
           </div>

@@ -1,8 +1,8 @@
 # Belle with Bit
 
-## Example React components from [Belle](http://nikgraf.github.io/belle/) built using [Bit](https://bitsrc.io/belle/react-components#components)
+## Example React components from [Belle](http://nikgraf.github.io/belle/). Built using [Bit](https://bitsrc.io/belle/react-components#components)
 
-Components can be imported using Bit:
+Components can be imported with Bit:
 ```
 bit import belle.react-components/components/button
 ```
@@ -15,3 +15,5 @@ import Button from 'bit/components/button';
 ```
 
 To view all of the component examples, see the project [source](https://github.com/GideonShils/Belle-With-Bit/blob/master/src/index.js).
+
+All credit to Nik Graf for building the original [Belle components](https://github.com/nikgraf/belle)
