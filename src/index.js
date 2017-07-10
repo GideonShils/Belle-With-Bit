@@ -51,7 +51,6 @@ class App extends React.Component {
               <pre><code className="bash">bit import belle.react-components/components/button</code></pre>
               <p>2. Use the component:</p>
               <pre><code className="html">{"import Button from 'bit/components/button';"}<br /><br />{"<Button primary>Submit</Button>"}</code></pre>
-              <p>3. That's it!</p>
             </div>
           </div>
 
