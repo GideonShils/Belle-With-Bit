@@ -1,0 +1,24 @@
+{
+    "sources": {
+        "impl": "impl.js",
+        "spec": "spec.js"
+    },
+    "env": {
+        "compiler": "bit.envs/builders/react::latest",
+        "tester": "bit.envs/mocha/react::latest"
+    },
+    "dependencies": {
+        "belle.react-components/utils/omit": "latest",
+        "belle.react-components/utils/has": "latest",
+        "belle.react-components/utils/unique-id": "latest",
+        "belle.react-components/utils/inject-style": "latest",
+        "belle.react-components/utils/union-class-names": "latest",
+        "belle.react-components/utils/animation-frame-management": "latest",
+        "belle.react-components/config/rating-config": "latest",
+        "belle.react-components/style/rating-style": "latest"
+    },
+    "packageDependencies": {
+        "react": "^15.4.1",
+        "exenv": "^1.2.0"
+    }
+}

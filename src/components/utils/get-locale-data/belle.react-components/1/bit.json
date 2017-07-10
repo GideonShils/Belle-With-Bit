@@ -1,0 +1,14 @@
+{
+    "sources": {
+        "impl": "impl.js",
+        "spec": "spec.js"
+    },
+    "env": {
+        "compiler": "bit.envs/compilers/babel::latest",
+        "tester": "none"
+    },
+    "dependencies": {
+        "belle.react-components/config/i18n-config": "latest"
+    },
+    "packageDependencies": {}
+}

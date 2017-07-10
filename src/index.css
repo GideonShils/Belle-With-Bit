@@ -1,0 +1,230 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Regular Styles */
+
+html {
+    background-image: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Open Sans', sans serif;
+    font-weight: 300;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 53px -11px rgba(0,0,0,0.6);
+    moz-box-shadow: 0px 0px 53px -11px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 53px -11px rgba(0,0,0,0.6);
+    border-radius: 6px;
+}
+
+.header {
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+}
+
+.header img {
+    width: 60px;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 100px;
+    margin-bottom: 25px;
+}
+
+.main {
+    background: #fff;
+    padding: 30px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+code {
+    border-radius: 6px;
+    font-family: Courier New, Courier, monospace;
+    padding: 15px !important;
+    -webkit-box-shadow: 0px 0px 53px -11px rgba(0,0,0,0.2);
+    moz-box-shadow: 0px 0px 53px -11px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 53px -11px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.info {
+    margin-bottom: 50px;
+}
+
+.info h2 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.info p {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.usage p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 100px;
+    height: 1px;
+    background: #9481F6;
+    margin: 0 auto;
+}
+
+.info a {
+    text-decoration: none;
+    color: #9481F6;
+}
+
+.section h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 20px;
+}
+
+.section h4 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.combobox {
+    margin-bottom: 30px;
+}
+
+.datepicker {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.rating {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.spinner {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.textinput {
+    margin-bottom: 30px;
+}
+
+.toggle {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+@media all and (max-width: 850px) {
+    .button {
+        display: block;
+    }
+
+    .datepicker {
+        display: block;
+    }
+
+    .rating {
+        display: block;
+    }
+
+    .spinner {
+        display: block;
+    }
+
+    .toggle {
+        display: block;
+    }
+}

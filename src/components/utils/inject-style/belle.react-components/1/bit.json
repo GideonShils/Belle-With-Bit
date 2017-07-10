@@ -1,0 +1,19 @@
+{
+    "sources": {
+        "impl": "impl.js",
+        "spec": "spec.js"
+    },
+    "env": {
+        "compiler": "bit.envs/builders/react::latest",
+        "tester": "none"
+    },
+    "dependencies": {
+        "belle.react-components/utils/flatten": "latest",
+        "belle.react-components/utils/map-object": "latest",
+        "belle.react-components/style/animations": "latest"
+    },
+    "packageDependencies": {
+        "react-dom": "^15.4.1",
+        "exenv": "^1.2.0"
+    }
+}

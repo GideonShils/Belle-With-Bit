@@ -1,0 +1,35 @@
+{
+    "sources": {
+        "impl": "impl.js",
+        "spec": "spec.js"
+    },
+    "env": {
+        "compiler": "bit.envs/builders/react::latest",
+        "tester": "bit.envs/mocha/react::latest"
+    },
+    "dependencies": {
+        "belle.react-components/utils/inject-style": "latest",
+        "belle.react-components/utils/union-class-names": "latest",
+        "belle.react-components/utils/has": "latest",
+        "belle.react-components/utils/map": "latest",
+        "belle.react-components/utils/shift": "latest",
+        "belle.react-components/utils/reverse": "latest",
+        "belle.react-components/utils/omit": "latest",
+        "belle.react-components/utils/unique-id": "latest",
+        "belle.react-components/utils/convert-date-to-date-key": "latest",
+        "belle.react-components/utils/get-date-key": "latest",
+        "belle.react-components/utils/get-date-for-date-key": "latest",
+        "belle.react-components/utils/get-week-array-for-month": "latest",
+        "belle.react-components/utils/get-last-day-for-month": "latest",
+        "belle.react-components/utils/get-locale-data": "latest",
+        "belle.react-components/utils/today": "latest",
+        "belle.react-components/style/date-picker-style": "latest",
+        "belle.react-components/config/date-picker-config": "latest",
+        "belle.react-components/components/action-area": "latest",
+        "belle.react-components/components/disabled-day": "latest",
+        "belle.react-components/components/day": "latest"
+    },
+    "packageDependencies": {
+        "react": "^15.4.1"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "sources": {
+        "impl": "impl.js",
+        "spec": "spec.js"
+    },
+    "env": {
+        "compiler": "none",
+        "tester": "none"
+    },
+    "dependencies": {},
+    "packageDependencies": {
+        "babel-core": "^6.22.1",
+        "babel-preset-latest": "^6.22.0",
+        "babel-plugin-transform-object-rest-spread": "^6.23.0"
+    }
+}

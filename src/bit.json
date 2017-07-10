@@ -1,0 +1,41 @@
+{
+    "sources": {
+        "impl": "impl.js",
+        "spec": "spec.js"
+    },
+    "env": {
+        "compiler": "none",
+        "tester": "none"
+    },
+    "dependencies": {
+        "belle.react-components/components/text-input": "1",
+        "belle.react-components/components/rating": "2",
+        "belle.react-components/components/toggle": "3",
+        "belle.react-components/components/button": "1",
+        "belle.react-components/components/card": "3",
+        "belle.react-components/components/combo-box": "2",
+        "belle.react-components/components/option": "1",
+        "belle.react-components/components/combo-box-item": "2",
+        "belle.react-components/components/date-picker": "2",
+        "belle.react-components/components/placeholder": "1",
+        "belle.react-components/components/select": "1",
+        "belle.react-components/config/select-config": "2",
+        "belle.react-components/components/separator": "1",
+        "belle.react-components/components/spinner": "1",
+        "belle.react-components/style/card-style": "3",
+        "belle.react-components/style/spinner-style": "2",
+        "belle.react-components/style/text-input-style": "2",
+        "belle.react-components/style/toggle-style": "2",
+        "belle.react-components/style/separator-style": "3",
+        "belle.react-components/style/select-style": "3",
+        "belle.react-components/style/rating-style": "2",
+        "belle.react-components/style/placeholder-style": "2",
+        "belle.react-components/style/option-style": "2",
+        "belle.react-components/style/date-picker-style": "3",
+        "belle.react-components/style/combo-box-style": "3",
+        "belle.react-components/style/action-area-style": "3",
+        "belle.react-components/style/button-style": "3",
+        "belle.react-components/components/action-area": "4",
+        "belle.react-components/components/choice": "3"
+    }
+}
