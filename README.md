@@ -2,7 +2,8 @@
 
 ## Example React components from [Belle](http://nikgraf.github.io/belle/). Built using [Bit components](https://bitsrc.io/belle/react-components#components)
 
-# See the examples [live](https://github.com/nikgraf/belle).
+See the examples [live](https://github.com/nikgraf/belle).
+
 
 Components can be imported with Bit:
 ```
