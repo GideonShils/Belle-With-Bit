@@ -43,7 +43,7 @@ class App extends React.Component {
         <div className="main">
           <div className="info">
             <p>Easily import individual Belle components to your React project using Bit.</p>
-            <p>View the <a href="https://bitsrc.io/belle/react-components#components">Bit scope</a> | View the original <a href="http://nikgraf.github.io/belle/">Belle project</a></p>
+            <p>View the <a href="https://bitsrc.io/belle/react-components#components">Bit scope</a> | View the original <a href="http://nikgraf.github.io/belle/">Belle project</a> from <a href="https://github.com/nikgraf/belle">Nik Graf</a> </p>
             <div className="line"></div>
             <div className="usage">
               <h2>Usage</h2>
@@ -327,6 +327,9 @@ class App extends React.Component {
               />
             </div>
           </div>
+        </div>
+        <div className="footer">
+          <p>Built by <a href="https://github.com/GideonShils">Gideon Shils</a> | Components by <a href="https://github.com/nikgraf">Nik Graf</a></p>
         </div>
       </div>
     )

@@ -101,8 +101,6 @@ body {
 .main {
     background: #fff;
     padding: 30px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
 }
 
 h1 {
@@ -187,7 +185,7 @@ a:hover {
 }
 
 .section {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .card {
@@ -224,6 +222,21 @@ a:hover {
     display: inline-block;
     margin-right: 30px;
     margin-bottom: 30px;
+}
+
+.footer {
+    height: 50px;
+    text-align: center;
+}
+
+.footer p {
+    color: #fff;
+    margin-top: 30px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
 }
 
 @media all and (max-width: 850px) {
